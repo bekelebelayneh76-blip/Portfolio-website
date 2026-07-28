@@ -15,9 +15,9 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 border-b border-slate-800/70 bg-slate-900/95 shadow-lg backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-        <Link to="/" className="text-xl tracking-tight text-white transition-colors hover:text-blue-400">
+        <Link to="/" className="text-xl tracking-tight text-white transition-colors hover:text-blue-300">
           <span className="font-bold">Belayneh</span>
-          <span className="ml-1 font-medium text-blue-400">.dev</span>
+          <span className="ml-1 font-medium text-blue-300">.dev</span>
         </Link>
 
         <div className="hidden items-center gap-8 md:flex">
