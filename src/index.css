@@ -1,1 +1,58 @@
 @import "tailwindcss";
+
+.contact-section {
+  padding: 5rem 1.5rem;
+}
+
+.contact-card,
+.contact-info-card {
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 639px) {
+  .contact-section {
+    padding: 4rem 1rem;
+  }
+
+  .contact-card,
+  .contact-info-card {
+    padding: 1.5rem;
+    border-radius: 24px;
+  }
+
+  .contact-section h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .contact-section p {
+    font-size: 0.95rem;
+  }
+
+  .contact-form-button {
+    width: 100%;
+  }
+
+  .contact-link-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .contact-section {
+    padding: 4.5rem 1.25rem;
+  }
+
+  .contact-card,
+  .contact-info-card {
+    padding: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-section {
+    padding: 5rem 2rem;
+  }
+}

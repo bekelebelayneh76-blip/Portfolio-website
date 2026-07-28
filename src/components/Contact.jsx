@@ -4,11 +4,11 @@ import { INFO } from '../data/constants';
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 px-6 bg-slate-50">
-      <div className="max-w-6xl mx-auto">
+    <section id="contact" className="contact-section py-20 px-6 bg-slate-50">
+      <div className="contact-shell max-w-6xl mx-auto">
         <div className="grid gap-10 lg:grid-cols-2 items-start">
           {/* Left Column: Contact Form */}
-          <div className="rounded-[32px] bg-white shadow-xl shadow-slate-200/70 border border-slate-200 p-8 lg:p-10">
+          <div className="contact-card rounded-[32px] bg-white shadow-xl shadow-slate-200/70 border border-slate-200 p-8 lg:p-10">
             <p className="text-sm uppercase tracking-[0.35em] text-slate-400 mb-4">Contact</p>
             <h2 className="text-4xl font-semibold text-slate-900 mb-6">Send a Message</h2>
             <p className="text-slate-600 mb-10 leading-relaxed">
@@ -45,7 +45,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="inline-flex items-center justify-center rounded-3xl bg-blue-600 px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-500/10 transition hover:-translate-y-0.5 hover:bg-blue-700"
+                className="contact-form-button inline-flex items-center justify-center rounded-3xl bg-blue-600 px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-500/10 transition hover:-translate-y-0.5 hover:bg-blue-700"
               >
                 Send Message
               </button>
@@ -53,7 +53,7 @@ export default function Contact() {
           </div>
 
           {/* Right Column: Professional Links */}
-          <div className="rounded-[32px] bg-gradient-to-br from-white to-slate-100 border border-slate-200 p-8 lg:p-10 shadow-lg shadow-slate-200/60">
+          <div className="contact-info-card rounded-[32px] bg-gradient-to-br from-white to-slate-100 border border-slate-200 p-8 lg:p-10 shadow-lg shadow-slate-200/60">
             <p className="text-sm uppercase tracking-[0.35em] text-slate-400 mb-4">Let's Build Something Together</p>
             <h2 className="text-4xl font-semibold text-slate-900 mb-6">Let's Build Something Together</h2>
             <p className="text-slate-600 mb-8 leading-relaxed">
@@ -61,7 +61,7 @@ export default function Contact() {
             </p>
 
             <div className="space-y-5">
-              <div className="flex items-center gap-4 rounded-3xl bg-white border border-slate-200 p-5 shadow-sm">
+              <div className="contact-link-item flex items-center gap-4 rounded-3xl bg-white border border-slate-200 p-5 shadow-sm">
                 <Mail className="w-5 h-5 text-blue-600" />
                 <div>
                   <p className="text-xs uppercase tracking-[0.25em] text-slate-400">Email</p>
@@ -69,7 +69,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 rounded-3xl bg-white border border-slate-200 p-5 shadow-sm">
+              <div className="contact-link-item flex items-center gap-4 rounded-3xl bg-white border border-slate-200 p-5 shadow-sm">
                 <GitBranch className="w-5 h-5 text-slate-900" />
                 <div>
                   <p className="text-xs uppercase tracking-[0.25em] text-slate-400">GitHub</p>
@@ -79,7 +79,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 rounded-3xl bg-white border border-slate-200 p-5 shadow-sm">
+              <div className="contact-link-item flex items-center gap-4 rounded-3xl bg-white border border-slate-200 p-5 shadow-sm">
                 <div>
                   <p className="text-xs uppercase tracking-[0.25em] text-slate-400">Location</p>
                   <a
